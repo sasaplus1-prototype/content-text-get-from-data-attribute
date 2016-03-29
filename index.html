@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
+    <title>content text get from data attribute</title>
+    <style>
+      p::before,
+      p:before {
+        content: attr(data-before) "";
+      }
+
+      p::after,
+      p:after {
+        content: attr(data-after) "";
+      }
+    </style>
+  </head>
+  <body>
+    <p data-before="[" data-after="]">The quick brown fox jumps over the lazy dog</p>
+  </body>
+</html>
